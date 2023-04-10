@@ -19,7 +19,7 @@ public class CameraController : MonoBehaviour
     this.horizontalRotation = this.transform.eulerAngles.y;
   }
 
-  private void Update()
+  private void LateUpdate()
   {
     Look();
     Debug.DrawRay(this.transform.position, this.transform.forward * 2, Color.red);
